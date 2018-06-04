@@ -60,6 +60,5 @@ for c in config:
 | var    | value         |
 | -----  | ------------- |
 | user   | admin         |
-| pass   | 1qazXSW@      |
-| email  | wfan@psyop.tv |
+
 
