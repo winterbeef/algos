@@ -15,9 +15,9 @@ directions = [
 def next_step(starts, deltas):
     return map(lambda start, delta: start + delta, starts, deltas)
 
-def change_direction(cur_idx, directions):
-    cur_idx = (cur_idx + 1) % len(directions)
-    return directions[cur_idx]
+def change_direction(idx, directions):
+    idx = (idx + 1) % len(directions)
+    return directions[idx]
 
 def spiral(width):
     # spiral[0][0]       NW
@@ -31,7 +31,7 @@ def spiral(width):
 
     x = -1
     y =  0
-    dir_idx = 0
+    dir_idx = 0 # direction index
     deltas = directions[dir_idx]
 
     for step in range(0, width*width):
@@ -41,7 +41,9 @@ def spiral(width):
             spiral[x1][y1] = step
 
         else:
-            deltas = change_direction(dir_idx, directions)
+            dir_idx = (dir_idx + 1) % 4
+            deltas = directions[dir_idx]
+            # deltas = change_direction(dir_idx, directions)
             (x1, y1) = next_step((x, y), deltas)
             spiral[x1][y1] = step
 
