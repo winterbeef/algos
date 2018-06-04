@@ -1,0 +1,138 @@
+You'll do fine. Focus on data structures. Using stacks, queues, linked lists
+
+Find a couple questions from cracking the coding interview and work through them without looking at the answers
+
+It's not about solving it as quickly as possible it's about your thought process so make sure to over communicate and def ask questions up front to make sure you understand it and to show them you aren't afraid to ask questions
+
+Also helps to plan out what you'll do before you start writing out the code. Walk through the steps
+
+They want to see what and how you're thinking about things so just talk it out as you go
+
+I'm a Technical Artist working in the Social VR group
+In the MPK office
+
+---
+given a list if ppl (person.birth, person.death(None))
+find year with highest population
+
+- clarify spec
+    - ask questions
+    - what data structure incoming data?
+    - what about ties?
+    - ambiguity?
+
+
+-draw example
+    - avoid special cases
+    - add dupes
+    - add nulls
+    - large set
+
+- brute force
+    - don't code
+    - estimate runtime O(PY)
+    - ask interviewer? "Code this?"
+
+- write code!
+    - modularize
+    - write most interesting first
+    - start high-level
+    - talk while coding
+    - ask interviewer if abbrevs are ok
+
+- TEST
+    - Walk logic
+    - Check things that cause problems: fenceposts, math
+    - try pathological data
+    - try empty arrays
+
+#################
+competition:
+- insta -- owned by fb, younger crowd
+- snap -- ephemeral nature!!  privacy,  rep
+- linkedin -- prof
+- google -- ads/ how affected by gdpr?
+- twitter --
+
+enviro:
+- anti-fb -- 2016 election; russian meddling; fake news
+- net neutrality
+- gdpr
+
+
+Me:
+- communications:
+-- as "free agent", i was the project manager and requirements gatherer for the projects I developed:
+
+-- WADE/AD: clients were technicians/engineers.
+-- PAD: clients were designers/producers.
+-- Holysheet (bidding system w/custom business logic): Clients were producers, scheduling and 3d Leads.
+
+
+
+--- WADE: systems/engineering my clients; implement Services For Unix (rfc 2307); custom business logic, cloud licensing support -- reports via webservices
+
+x--- PAD (artist database): customizations to a internal WordPress-based, graphics-intensive app;  Tagging, faceted search; Added "shopping cart" functionality; Tiered permissions backed by AD
+
+
+??????????????????????????????????????
+how did you start here?  when?
+from where?
+has your role changed?
+
+what are the immediate projects?
+longer term?
+
+how are projects determined?
+how are project teams organized?
+how is success measured?
+
+what are responsiblities?
+what skills will you be looking for?
+what is a typical day/week like?
+to whom would the person in this position report?
+is the manager be involved in the interview process?
+
+how many people here?
+other offices?
+what are the next big initiatives?
+where is the company headed?
+who's the top competitor?
+what's a big opportunity?
+how would this position contribute?
+
+how is training?
+what are the opportunites for advancement?
+monetarily, but also in professional development, skills?
+how does one advance?
+what are the challenges faced?
+who's really good? who's really great at this job?
+what about flexibility in time?
+what are the next steps? who? what? when?
+
+
+
+Focus on Culture
+
+levelling: @5 or 6 (interview performance + tony)
+as senior, not nec, managment, but *lead*.
+lead a *product*, not *team*
+moving from product to product -- I track.
+initial team @ bootcamp
+(interest, impact and learning should drive team membership)
+(infrastructure (lots of teams)) or (core)
+
+BOOTCAMP (onboarding)
+- exposure to teams, culture
+- like a career fair
+- 40-50 teams that have a need
+- languages, goals
+- I choose 3 teams -- ship and build a product
+- 6-8 weeks
+- not always in NYC
+- 2 in menlo
+- some in nyc
+- some in menlo
+
+
+
