@@ -8,7 +8,7 @@ class Node(object):
         self.next = None
 
     def __repr__(self):
-        return "<{}>".format(self.val)
+        return "<{:02d}>".format(self.val)
 
 
 # class LinkedList(object):
@@ -30,17 +30,16 @@ def print_list(head):
         cur = cur.next
 
 def make_node():
-    return Node(random.randint(0, 100))
+    return Node(random.randint(0, 99))
 
 def add_to_list(head, node):
     if head is None:
-        head = node
-        return head
-
-    elif head.val > node.val:
         node.next = head
         head = node
-        return node
+
+    elif head.val >= node.val:
+        node.next = head
+        head = node
 
     else:
         cur = head
@@ -49,21 +48,28 @@ def add_to_list(head, node):
         node.next = cur.next
         cur.next = node
 
-
-
-
     return head
+
+def revprint(head):
+    if head is None:
+        return
+    revprint(head.next)
+    print head
+
 
 if __name__ == '__main__':
     nodes = [make_node() for n in xrange(12)]
     head = make_node()
     pprint(head)
-    pprint(nodes)
+    print " ".join([str(node) for node in nodes])
 
     for node in nodes:
-        add_to_list(head, node)
+        head = add_to_list(head, node)
 
     print_list(head)
+
+
+
 
     # head = make_node()
     # node = make_node()
