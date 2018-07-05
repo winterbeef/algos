@@ -52,9 +52,10 @@ def add_to_list(head, node):
 
 def revprint(head):
     if head is None:
+        print
         return
     revprint(head.next)
-    print head
+    print head,
 
 
 if __name__ == '__main__':
@@ -68,19 +69,9 @@ if __name__ == '__main__':
 
     print_list(head)
 
+    revprint(head)
 
 
-
-    # head = make_node()
-    # node = make_node()
-
-    # print "head -> {}, {}".format(id(head), head.val)
-    # print "node -> {}, {}".format(id(node), node.val)
-
-    # head = node
-
-    # print "head -> {}, {}".format(id(head), head.val)
-    # print "node -> {}, {}".format(id(node), node.val)
 
 
 
