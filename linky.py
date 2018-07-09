@@ -11,23 +11,33 @@ class Node(object):
         return "<{:02d}>".format(self.val)
 
 
-# class LinkedList(object):
-#     def __init__(self, head=None):
-#         self.head = head
+def reverselist(head):
+    if head is None:
+        return None
 
-#     def __repr__(self):
-#         buf = []
-#         node = self.head
-#         while node:
-#             buf.append(node)
-#             node = node.next
-#         return '->'.join([str(n) for n in buf])
+    if head.next is None:
+        return head
+
+    last = head
+    cur = head.next
+    last.next = None
+
+    while cur:
+        next = cur.next
+        cur.next = last
+        last = cur
+        cur = next
+
+    head = last
+    return head
+
 
 def print_list(head):
     cur = head
     while cur:
         print cur,
         cur = cur.next
+    print
 
 def make_node():
     return Node(random.randint(0, 99))
@@ -61,17 +71,14 @@ def revprint(head):
 if __name__ == '__main__':
     nodes = [make_node() for n in xrange(12)]
     head = make_node()
-    pprint(head)
-    print " ".join([str(node) for node in nodes])
 
     for node in nodes:
         head = add_to_list(head, node)
-
     print_list(head)
 
-    revprint(head)
+    head = reverselist(head)
+    print_list(head)
 
-
-
-
+    # print " ".join([str(node) for node in nodes])
+    # revprint(head)
 
