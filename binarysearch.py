@@ -35,9 +35,9 @@ def reverselist(head):
 def print_list(head):
     cur = head
     while cur:
-        print cur,
+        print (cur),
         cur = cur.next
-    print
+    print()
 
 def make_num():
     return random.randint(0, 99)
@@ -68,7 +68,7 @@ def revprint(head):
         print
         return
     revprint(head.next)
-    print head,
+    print (head),
 
 def binsearch(s, L, idx_left, idx_right):
     while idx_left <= idx_right:

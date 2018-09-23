@@ -49,13 +49,10 @@ def recursemult(a, b):
     else:
         return b + recursemult(a-1, b)
 
-def move(src, dst):
-    print "Moved from {} to {}".format(src, dst)
-
 def towers(sz, src, dst, tmp):
     sz = int(sz)
     if sz == 1:
-        move(src, dst)
+        print "Moved from {} to {}".format(src, dst)
     else:
         towers(sz-1, src, tmp, dst)
         towers(1,    src, dst, tmp)

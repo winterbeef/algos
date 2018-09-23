@@ -27,6 +27,7 @@ def pathto(x, y):
     if x == 0 and y == 0:
         print "Fin!"
         return True
+
     elif tried.get((x-1,y), None) == False:
         if pathto(x, y-1):
             print "Going {}, {}".format(x,y)
